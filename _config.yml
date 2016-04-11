@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+
+# Setup
+title:            'Chinmay Kulkarni'
+tagline:          'Assistant Professor, CMU HCII'
+description:      "Chinmay Kulkarni is an Assistant Professor in Carnegie Mellon's HCI Institute. His research studies and builds systems for large-scale learning, work, and mentoring."
+url:              http://cs.cmu.edu/~chinmayk
+baseurl:          /
+excerpt_separator: <!--more-->
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         2
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
+gems: [jekyll-paginate]
