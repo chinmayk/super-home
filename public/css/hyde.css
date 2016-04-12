@@ -93,8 +93,8 @@ html {
   /*text-decoration: underline;*/
 }
 
-.sidebar .dotted a {
-  text-decoration: inherit;
+.sidebar a:hover, .sidebar a:focus {
+  text-decoration: underline;
 }
 
 /* Sidebar nav */

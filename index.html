@@ -11,11 +11,11 @@ title: Home
       {% for post in paginator.posts %}
       <div class="publication">
         <h2 class="pub-title">
-          <img src="{{ site.url }}/assets/logos/{{post.logo}}" class="icon"/>
+          <img src="{{ site.url }}/assets/logos/{%if post.logo%}{{post.logo}}{%else%}{{'FFFFFF-1.png'}}{%endif%}" class="icon"/>
           <a href="{{ post.url }}">
             {{ post.title }}
           </a>
-          <small>{{post.venue}}</small>
+          {%if post.award%}<small>{{post.award}}</small>{%endif%}
           <br/>
         <cite>{{post.authors}}</cite>
 </h2>
@@ -24,7 +24,9 @@ title: Home
       </div>
       {% endfor %}
     </div>
-
+    <div class="message">
+      More papers being added. Please see my <a href="https://scholar.google.com/citations?user=ZDatV6MAAAAJ&hl=en">Google Scholar</a> profile in the meanwhile.
+    </div>
     <div class="pagination">
       {% if paginator.next_page %}
         <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
