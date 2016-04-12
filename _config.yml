@@ -11,7 +11,7 @@ title:            'Chinmay Kulkarni'
 tagline:          'Assistant Professor, CMU HCII'
 description:      "Chinmay Kulkarni is an Assistant Professor in Carnegie Mellon's HCI Institute. His research studies and builds systems for large-scale learning, work, and mentoring."
 url:              http://cs.cmu.edu/~chinmayk
-baseurl:          /
+baseurl:          /~chinmayk/
 excerpt_separator: <!--more-->
 
 author:
