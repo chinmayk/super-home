@@ -29,6 +29,7 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
+ * Edited by Chinmay Kulkarni
  */
 
 html {
@@ -83,6 +84,19 @@ html {
   font-size: 3.25rem;
 }
 
+.sidebar h2 {
+  color: #fff;
+  /*margin-top: 0;*/
+  font-family: "Cardo", serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  /*text-decoration: underline;*/
+}
+
+.sidebar .dotted a {
+  text-decoration: inherit;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
@@ -128,7 +142,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -137,6 +151,7 @@ a.sidebar-nav-item:focus {
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
+    max-width: 64rem;
     margin-right: 4rem;
   }
 }
@@ -247,4 +262,22 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+
+/* customizations */
+.icon {
+   display:inline;
+   float: left;
+   width:6em; height: 6em;
+   padding-right:1em;
+   padding-top: 0.5em;
+}
+
+.pub-title {
+  font-size: 1em;
+}
+
+h2 small {
+  color: #666;
 }

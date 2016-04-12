@@ -1,22 +1,41 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container ">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <!-- <p class="lead">{{ site.description }}</p> -->
+    </div>
+    <div class="dotted">
+      <h2>Contact</h2>
+      <address>
+        Newell-Simon Hall 2504D<br/>
+        (412) 268-5831 <br/>
+        My usual response time to <a href="mailto:chinmayk@cs.cmu.edu">email</a> is about one working day. <br/>
+      </address>
+
+      <h2>Office hours</h2>
+      Fri 10am-11am, or by appointment
+
+      <h2>Teaching</h2>
+      {% markdown teaching-sidebar.md %}
+
+      <h2>Current students</h2>
+      {% markdown students-sidebar.md %}
     </div>
 
+
+
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
 
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -25,11 +44,9 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+      {% endcomment %}
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p>Last updated {{ site.time | date: '%b %Y' }}. All rights reserved.</p>
   </div>
 </div>
