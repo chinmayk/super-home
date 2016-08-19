@@ -39,10 +39,14 @@ html {
   html {
     font-size: 16px;
   }
+
+  body {
+	position:relative;
+  }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -62,10 +66,11 @@ html {
 }
 @media (min-width: 48em) {
   .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
+    /*height: 100%;*/
     width: 18rem;
     text-align: left;
   }

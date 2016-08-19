@@ -1,45 +1,80 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
+  
+  <a name="now"></a>
+  {% markdown now.md %}
 
-{% markdown about.md  %}
-
-
-  <h1>Publications</h1>
-    <div class="posts">
-      {% for post in paginator.posts %}
-      <div class="publication">
-        <h2 class="pub-title">
-          <img src="{{ site.url }}/assets/logos/{%if post.logo%}{{post.logo}}{%else%}{{'FFFFFF-1.png'}}{%endif%}" class="icon"/>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-          {%if post.award%}<small>{{post.award}}</small>{%endif%}
-          <br/>
-        <cite>{{post.authors}}</cite>
-</h2>
-        <span class="post-date">{{ post.venue }}</span>
-        <a href="{{site.url}}/assests/pdfs/{{post.pdf}}">PDF</a> {%if post.project_url%} | <a href="{{post.project_url}}">Project</a> {% endif %}
+  
+  <h2>Recent publications</h2>
+  <div class="ui very relaxed list">
+    {% for post in paginator.posts %}
+    <div class="item">
+      
+        <img src="{{ site.url }}/assets/logos/{%if post.logo%}{{post.logo}}{%else%}{{'FFFFFF-1.png'}}{%endif%}" class="ui avatar image"/>
+        <div class="content">
+          <div class="header">
+            <a href="{{ post.url }}" >
+              {{ post.title }}
+            </a>
+            {%if post.award%}<br/><small>{{post.award}}</small>{%endif%}
+          </div>
+          <div class="meta">
+              <span class="post-date">{{ post.venue }}</span>
+            </div>
+        <!--<br/>-->
+          <div class="description">
+            <small>{{post.authors}}</small>
+            
+            <br/>
+            <a href="{{site.url}}/assets/pdfs/{{post.pdf}}">PDF</a> {%if post.project_url%} | <a href="{{post.project_url}}">Project</a> {% endif %}
+          </div>
+        </div>
       </div>
-      {% endfor %}
-    </div>
-    <div class="message">
-      More papers being added. Please see my <a href="https://scholar.google.com/citations?user=ZDatV6MAAAAJ&hl=en">Google Scholar</a> profile in the meanwhile.
-    </div>
-    <div class="pagination">
-      {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    {% endfor %}
+  </div>
+
+
+  <!--<div class="ui message">
+    I'm migrating papers from my old website. Meanwhile, see <a href="https://scholar.google.com/citations?user=ZDatV6MAAAAJ&hl=en">Google Scholar</a>.
+  </div>-->
+  <div class="pagination">
+    {% if paginator.next_page %}
+      <a class="ui tiny labeled icon button" href="{{ site.baseurl }}">
+          <i class="left arrow icon"></i>
+          Older
+        </a>
+    {% endif %}
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="ui tiny right labeled icon button" href="{{ site.baseurl }}">
+          <i class="right arrow icon"></i>
+          Newer
+        </a>
       {% else %}
-        <span class="pagination-item older">Older</span>
+        <a class="ui tiny right labeled icon button" href="{{ site.baseurl }}page{{paginator.previous_page}}">
+          <i class="right arrow icon"></i>
+          Newer
+        </a>
       {% endif %}
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-        {% else %}
-          <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-        {% endif %}
-      {% else %}
-        <span class="pagination-item newer">Newer</span>
-      {% endif %}
+    {% endif %}
+  </div>
+
+  <section class="segment">
+    <a name="teaching"></a>
+    {% markdown teaching-sidebar.md %}
+  </section>
+
+  <a name="research"></a>
+  <!--{% markdown manifesto.md %}-->
+
+  <a name="hi"></a>
+  {% markdown hi.md%}
+
+  {% markdown etc.md %}
+  <div class="ui left dividing rail">
+    <div class="ui segment">
+      Left Rail Content
     </div>
+  </div>
