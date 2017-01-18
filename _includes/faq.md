@@ -28,9 +28,11 @@ If you are a **student at CMU** already:
 If you are an undergraduate student not at CMU, please consider applying to our summer internship. If you are applying to graduate school, please see below.
 
 
-**Q: I want to apply to grad school at CMU. DO you have advice?**
+**Q: I want to apply to grad school at CMU. Do you have advice?**
 
-[Jason Hong](https://www.cs.cmu.edu/~jasonh/faq.html) summarizes this well. tl;dr Please don't send me the same email you've sent ten other faculty. I welcome you to apply. 
+[Jason Hong](https://www.cs.cmu.edu/~jasonh/faq.html) has the best advice for you. tl;dr Please don't send me the same email you've sent ten other faculty. 
+
+If you email me, mentioning a particular project or paper will improve the chances I will respond. 
 
 **Q: What are you looking for in a graduate student?** 
 
@@ -50,11 +52,16 @@ Here's the deal: come to the first week of classes. Amongst students who attend 
 Yes, please email me directly, and I'll be happy to pass on your information to my students (and others who work with me.)
 
 **Q: Can you send us your best students on an internship?**
+
 Internships are a great way to expose students to real problems and learn how people really use interactive systems. Internships also provide students with valuable experience about what it's like to work outside the university. We encourage PhD students to seek internships when it will likely contribute to the student's dissertation research. Consequently, it's tremendously important that students be able to publish their internship work and use the resulting data and insights to further their research. 
 
 When appropriate, code that interns write may be proprietary to the employer. However, employers should anticipate -- indeed relish -- the idea that students will continue working in the area of their research internship, and that after their internship students will continue to publish and produce code that is often open source. Interns provide their employer the opportunity to closely collaborate with someone immersed in the culture, insights, and innovations of their university. These internships often result in long-term collaborations with the student and with faculty.
 
-
+If you have an internship opportunity that fits the bill, please email me. 
 
 ##Using our software, data, and experimental materials
 We work hard to share our software, experimental materials, and data whenever possible. For our data and experimental materials, please contact us. You can sign up directly for [PeerStudio](https://www.peerstudio.org) and [Talkabout](https://talkabout.stanford.edu/); contact us for source code. To use other software, please contact the first author of the research paper.  
+
+
+###Acknowledgments
+This FAQ and the (good) ideas in it come from [Scott Klemmer](http://d.ucsd.edu/srk/) and [Jason Hong](http://www.cs.cmu.edu/~jasonh/).
