@@ -2,7 +2,7 @@
 
 **Q: Can we meet?**
 
-Sure! During the academic year, I hold weekly group office hours (usually, Fri at 10am. Check homepage). You do not need an appointment to attend, but you're welcome to send me email beforehand so we can use our time most productively. During office hours, please walk right in -- do not wait outside. If you are a student, and we make decisions about your academic plan, follow up with an email to me summarizing the decisions we made. It's essential to have this in writing—my memory is pretty good, but not perfect. I do not hold office hours if I am traveling. Please check the homepage for travel schedule.
+Sure! During the academic year, I hold weekly group office hours (check homepage for times). You do not need an appointment to attend, but you're welcome to send me email beforehand so we can use our time most productively. During office hours, please walk right in -- do not wait outside. If you are a student, and we make decisions about your academic plan, follow up with an email to me summarizing the decisions we made. It's essential to have this in writing—my memory is pretty good, but not perfect. I do not hold office hours if I am traveling. Please check the homepage for travel schedule.
 
 _Private meetings_
 If the situation warrants, you can make an appointment for a closed-door meeting. Here are situations that do *not* warrant a closed-door/private meeting.
