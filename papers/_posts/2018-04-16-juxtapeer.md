@@ -33,7 +33,7 @@ Julia did. She correctly points out in this paper that poor peer feedback isn't 
 
 **Q: What domains does this work for? Will it work with math?**
 
-**A** Maybe, but unlikely. Contrasting cases, and constructivist learning more generally, are best suited to open-ended solutions. If there is only one right answer, and not varying degrees of goodness, juxtaposing different examples will likely have little value. 
+**A** Maybe. Contrasting cases, and constructivist learning more generally, work in a wide variety of settings, but really shine when used for open-ended solutions. If the correct/incorrectness of a solution, or the varying degrees of goodness are immediately apparent, juxtaposing different examples will likely have little value. On the other hand, if the features that determine goodness are hidden, then contrasts can have large benefits. 
 
 **Q: Why is it called Juxtapeer?**
 
