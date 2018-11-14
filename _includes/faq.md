@@ -38,7 +38,7 @@ If you email me, mentioning a particular project or paper will improve the chanc
 
 Jason has [great general advice](https://www.cs.cmu.edu/~jasonh/advice.html) here as well.
 
-I am particularly impressed by students who show an extraordinary amount of initiative and hard work. Being creative and having a good sense of humour are also positives. I don't particularly care where you went to school, but I do care what you did there. **Note:** As of Apr 2017, it seems increasingly less likely that I will advise new PhD students, unless we have talked already. (Sorry, I'd like to do a good job of advising, so I need to spend enough time with my students.) If you want to still work with me, I am happy to advise individual _projects_.
+I am particularly impressed by students who show an extraordinary amount of initiative and hard work. Being creative and having a good sense of humour are also positives. I don't particularly care where you went to school, but I do care what you did there.  
 
 **Q: I want to take your class, but I am waitlisted. Can you take me off the wait list?**
 
@@ -46,7 +46,7 @@ Here's the deal: come to the first week of classes. Amongst students who attend 
 
 **Q: I want to get you a small gift to thank you for teaching/writing me a letter/judging our on-campus event...**
 
-Thank you for your thoughtfulness, but as a matter of policy, I do not accept gifts from current students. If you want to express your thanks, a simple thank you note is appreciated. You could also consider donating to the [UNICEF](https://www.unicef.org/) or the [AAUW](http://www.aauw.org/) so others, like you, can experience the benefits of education.
+If you want to express your thanks, a simple thank you note is appreciated. You could also consider donating to the [UNICEF](https://www.unicef.org/) or the [AAUW](http://www.aauw.org/) so others, like you, can experience the benefits of education. Thank you for your thoughtfulness. 
 
 ##Companies and industrial research labs
 

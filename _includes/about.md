@@ -1,9 +1,4 @@
-_Assistant Professor, CMU HCII_
-
 **I design computational systems to help people work and learn better, together.**
 
-Learning and work are at a tipping point. If the late 20th century belonged to college-educated "organization man", the 21st century will belong to the forever-learning intellectual risk-taker. The increasing pace of technological change mean that formal schooling will be merely the start, and not the end of one’s educational journey. We already see signs of this transformation: more than 20 million learners have enrolled in Massive Open Online Classes, and freelancers are expected to comprise 40% of the US workforce by 2020. My research explores this future where a dramatically larger number of people engage in lifelong learning, and where learning and work are increasingly intertwined. I am particularly interested in technological systems for teaching skills that cannot be easily automated: skills that require judgment, have few predictable tasks, and those that require social interaction.
-
-My research over the past five years has demonstrated that software systems and associated pedagogy that leverages peer processes at massive scale can address this societal challenge. Over 100,000 learners in MOOCs, thousands of students in university classrooms, and freelancers on platforms like Upwork have benefited directly through systems I have designed. These socio-technical systems are informed by fundamental research in psychology, learning science and organizational science. We deploy these systems in real-world settings, observe how thousands of people use them and conduct careful experimentation.
-
-Through our work, we hope to a) yield a robust science of lifelong learning at massive scale, and b) design patterns to instantiate this science into practical large-scale systems.
+Here's a rough diagram of my current research interests, taken from a recent talk. 
+![A venn diagram of my research interests. They lie at the intersection of large-scale data/AI, learning, and work.](assets/research-venn.001.png)

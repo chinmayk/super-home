@@ -1,0 +1,22 @@
+---
+layout: default
+title: All papers
+---
+<h2>Publications</h2>
+  <p>For each paper below, I also include some comments, and answers to frequently asked questions. </p>
+<div class="pagination">
+    {% for post in site.categories.papers %}
+    <div class="pagination-item">
+      <a href="{{site.baseurl}}{{ post.url }}" >
+        {{ post.title }}
+      </a>
+      {%if post.award%}<br/><small>{{post.award}}</small>{%endif%}
+      <div class="post-meta">
+          <span class="post-date">{{ post.venue }}</span>
+          <small>{{post.authors}}</small>
+      </div>  
+        <br/>
+        <a href="{{ site.baseurl }}assets/pdfs/{{post.pdf}}">PDF</a> {%if post.project_url%} | <a href="{{post.project_url}}">Project</a> {% endif %}
+    </div>
+    {% endfor %}
+  </div>

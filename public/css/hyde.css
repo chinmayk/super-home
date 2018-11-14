@@ -29,24 +29,19 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
- * Edited by Chinmay Kulkarni
  */
 
-html {
+ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
     font-size: 16px;
   }
-
-  body {
-	position:relative;
-  }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -66,11 +61,10 @@ html {
 }
 @media (min-width: 48em) {
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    /*height: 100%;*/
     width: 18rem;
     text-align: left;
   }
@@ -85,21 +79,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Cardo", serif;
+  /* font-family: "Abril Fatface", serif; */
   font-size: 3.25rem;
-}
-
-.sidebar h2 {
-  color: #fff;
-  /*margin-top: 0;*/
-  font-family: "Cardo", serif;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  /*text-decoration: underline;*/
-}
-
-.sidebar a:hover, .sidebar a:focus {
-  text-decoration: underline;
 }
 
 /* Sidebar nav */
@@ -147,7 +128,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-
+    max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -156,7 +137,6 @@ a.sidebar-nav-item:focus {
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
-    max-width: 64rem;
     margin-right: 4rem;
   }
 }
@@ -267,22 +247,4 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
-}
-
-
-/* customizations */
-.icon {
-   display:inline;
-   float: left;
-   width:8em; height: 6em;
-   padding-right:1em;
-   padding-top: 0.5em;
-}
-
-.pub-title {
-  font-size: 1em;
-}
-
-h2 small {
-  color: #666;
 }

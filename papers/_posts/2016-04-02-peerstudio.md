@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: paper
 title: "PeerStudio: Rapid Peer Feedback Emphasizes Revision and Improves Performance"
 logo: peerstudio.png
 venue: "Learning@ Scale 2015"

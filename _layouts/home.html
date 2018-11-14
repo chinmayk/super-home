@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
 
   {% include head.html %}
 
-  <body>
-    <div class="ui main text container">
-      <h1 class="ui header">{{site.title}}</h1>
-      {% markdown about.md  %}
-    </div>
+  <body class="theme-base-08">
     {% include sidebar.html %}
-
-    <div class="ui text container">
+    
+    <div class="content container">
+      {% markdown about.md  %}
       {{ content }}
     </div>
-    {% include footer.html %}
+    
   </body>
 </html>
 

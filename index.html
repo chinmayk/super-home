@@ -1,6 +1,10 @@
 ---
 layout: home
 title: Home
+pagination: 
+  enabled: true
+  category: papers
+  per_page: 5
 ---
   
   <a name="now"></a>
@@ -8,63 +12,41 @@ title: Home
 
   
   <h2>Recent publications</h2>
-  <div class="ui very relaxed list">
+  <p>For each paper below, I also include some comments, and answers to frequently asked questions. You can also see this whole list on <a href="{{site.baseurl}}all_papers">one page</a>.</p>
+  <div class="pagination">
     {% for post in paginator.posts %}
-    <div class="item">
-      
-        <img src="{{ site.url }}/assets/logos/{%if post.logo%}{{post.logo}}{%else%}{{'FFFFFF-1.png'}}{%endif%}" class="ui avatar image"/>
-        <div class="content">
-          <div class="header">
-            <a href="{{ post.url }}" >
-              {{ post.title }}
-            </a>
-            {%if post.award%}<br/><small>{{post.award}}</small>{%endif%}
-          </div>
-          <div class="meta">
-              <span class="post-date">{{ post.venue }}</span>
-            </div>
-        <!--<br/>-->
-          <div class="description">
-            <small>{{post.authors}}</small>
-            
-            <br/>
-            <a href="{{site.url}}/assets/pdfs/{{post.pdf}}">PDF</a> {%if post.project_url%} | <a href="{{post.project_url}}">Project</a> {% endif %}
-          </div>
-        </div>
-      </div>
+    <div class="pagination-item">
+      <a href="{{site.baseurl}}{{ post.url }}" >
+        {{ post.title }}
+      </a>
+      {%if post.award%}<br/><small>{{post.award}}</small>{%endif%}
+      <div class="post-meta">
+          <span class="post-date">{{ post.venue }}</span>
+          <small>{{post.authors}}</small>
+      </div>  
+        <br/>
+        <a href="{{ site.baseurl }}assets/pdfs/{{post.pdf}}">PDF</a> {%if post.project_url%} | <a href="{{post.project_url}}">Project</a> {% endif %}
+    </div>
     {% endfor %}
   </div>
 
-
-  <!--<div class="ui message">
-    I'm migrating papers from my old website. Meanwhile, see <a href="https://scholar.google.com/citations?user=ZDatV6MAAAAJ&hl=en">Google Scholar</a>.
-  </div>-->
   <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="ui tiny labeled icon button" href="{{ site.baseurl }}">
-          <i class="left arrow icon"></i>
-          Older
-        </a>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="ui tiny right labeled icon button" href="{{ site.baseurl }}">
-          <i class="right arrow icon"></i>
-          Newer
-        </a>
-      {% else %}
-        <a class="ui tiny right labeled icon button" href="{{ site.baseurl }}page{{paginator.previous_page}}">
-          <i class="right arrow icon"></i>
-          Newer
-        </a>
-      {% endif %}
-    {% endif %}
+      {% if paginator.total_pages > 1 %}
+      <ul class="pager">
+          {% if paginator.previous_page %}
+          <li class="previous">
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer papers  &rarr;</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li class="next">
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older papers</a>
+          </li>
+          {% endif %}
+      </ul>
+      {% endif %}    
   </div>
 
-  <section class="segment">
-    <a name="teaching"></a>
-    {% markdown teaching-sidebar.md %}
-  </section>
 
   <a name="research"></a>
   <!--{% markdown manifesto.md %}-->
@@ -73,8 +55,3 @@ title: Home
   {% markdown hi.md%}
 
   {% markdown etc.md %}
-  <div class="ui left dividing rail">
-    <div class="ui segment">
-      Left Rail Content
-    </div>
-  </div>
